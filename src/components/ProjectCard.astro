@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  href?: string;
+}
+
+const { title, description, href = '#' } = Astro.props as Props;
+---
+
+<article class="border border-black/10 rounded-xl p-5 sm:p-6 flex flex-col justify-between gap-4 bg-white hover:border-black/40 transition-colors">
+  <div class="space-y-2">
+    <h3 class="font-heading text-lg sm:text-xl tracking-wide uppercase">
+      {title}
+    </h3>
+    <p class="text-sm sm:text-base text-black/80">
+      {description}
+    </p>
+  </div>
+  <div>
+    <a
+      href={href}
+      class="inline-flex items-center text-xs sm:text-sm font-body uppercase tracking-[0.16em] text-black hover:text-violentRed"
+    >
+      View details
+      <span aria-hidden="true" class="ml-2">
+        →
+      </span>
+    </a>
+  </div>
+</article>
+

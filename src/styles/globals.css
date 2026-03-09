@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-black font-body antialiased;
+  }
+
+  a {
+    @apply underline-offset-2;
+  }
+}
+
+@layer components {
+  .page-wrapper {
+    @apply min-h-screen flex flex-col bg-white text-black;
+  }
+
+  .page-main {
+    @apply flex-1;
+  }
+
+  .page-inner {
+    @apply max-w-3xl md:max-w-4xl lg:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16;
+  }
+
+  .page-heading {
+    @apply font-heading text-3xl sm:text-4xl md:text-5xl tracking-wide uppercase;
+  }
+
+  .section-heading {
+    @apply font-heading text-xl sm:text-2xl tracking-wide uppercase mb-4;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-medium uppercase tracking-wide border border-black bg-black text-white transition-colors;
+  }
+
+  .btn-primary:hover {
+    @apply bg-violentRed border-violentRed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-medium uppercase tracking-wide border border-black text-black bg-white transition-colors;
+  }
+
+  .btn-secondary:hover {
+    @apply border-violentRed text-violentRed;
+  }
+}
+

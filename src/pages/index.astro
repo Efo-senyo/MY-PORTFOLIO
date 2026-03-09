@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+---
+
+<BaseLayout
+  title="Home | Nathaniel Senyo Gemegah"
+  description="Placeholder homepage for Nathaniel Senyo Gemegah – a clean, minimal portfolio with a focus on a weekly newsletter signup."
+>
+  <section class="space-y-10 sm:space-y-12">
+    <div class="space-y-6">
+      <p class="text-xs sm:text-sm font-body uppercase tracking-[0.2em] text-black/60">
+        Placeholder introduction
+      </p>
+      <h1 class="page-heading max-w-2xl">
+        I am Nathaniel Senyo Gemegah. I build, experiment, and share what I&apos;m learning.
+      </h1>
+      <p class="text-sm sm:text-base md:text-lg text-black/80 max-w-2xl leading-relaxed">
+        This is placeholder copy for a short, confident statement about who Pete is and what he&apos;s working on. Replace this with a clear one–two sentence bio that feels sharp and direct.
+      </p>
+    </div>
+
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)] lg:items-start">
+      <div class="space-y-6">
+        <NewsletterForm />
+      </div>
+
+      <aside class="space-y-4 border border-black/10 rounded-xl p-5 sm:p-6 bg-white">
+        <h2 class="section-heading">
+          A quick snapshot
+        </h2>
+        <p class="text-sm sm:text-base text-black/80">
+          Use this area later for a brief overview: what Pete does, who he helps, and what the newsletter is really about. For now, this is all placeholder text.
+        </p>
+        <a href="/projects" class="btn-secondary inline-flex">
+          View Projects
+        </a>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>
+

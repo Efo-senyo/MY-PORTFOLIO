@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+---
+
+<BaseLayout
+  title="About | Nathaniel Senyo Gemegah"
+  description="Placeholder about page for Nathaniel Senyo Gemegah – story, background, and what he is working on."
+>
+  <article class="space-y-12">
+    <header class="space-y-4">
+      <h1 class="page-heading">
+        About Nathaniel Senyo Gemegah
+      </h1>
+      <p class="text-sm sm:text-base md:text-lg text-black/80 max-w-2xl leading-relaxed">
+        This page is placeholder space for Pete&apos;s story: who he is, what he cares about, and how he arrived at the work he&apos;s doing today. Replace all of this text with your own voice and details.
+      </p>
+    </header>
+
+    <section class="space-y-4">
+      <h2 class="section-heading">
+        Who I Am
+      </h2>
+      <p class="text-sm sm:text-base text-black/80 leading-relaxed">
+        Use this section to introduce yourself in a grounded, human way. For now, this paragraph is only placeholder text describing your background, interests, and the kind of work that energizes you.
+      </p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="section-heading">
+        What I&apos;ve Done
+      </h2>
+      <p class="text-sm sm:text-base text-black/80 leading-relaxed">
+        Summarize key milestones or highlights from your journey so far. This could include projects, businesses, collaborations, or experiments. Replace this placeholder copy with concise, specific examples.
+      </p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="section-heading">
+        What I&apos;m Focused on Now
+      </h2>
+      <p class="text-sm sm:text-base text-black/80 leading-relaxed">
+        Share what currently has your attention. This placeholder text stands in for a short explanation of what you&apos;re building, learning, or exploring at the moment, and why it matters to you.
+      </p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="section-heading">
+        How This Newsletter Fits In
+      </h2>
+      <p class="text-sm sm:text-base text-black/80 leading-relaxed">
+        Explain how your newsletter ties all of this together&mdash;what readers can expect and why it&apos;s worth their attention. Replace this with a simple, direct pitch written in your own words.
+      </p>
+    </section>
+
+    <section class="pt-4 border-t border-black/10">
+      <NewsletterForm compact={true} />
+    </section>
+  </article>
+</BaseLayout>
+

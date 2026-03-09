@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const projects = [
+  {
+    title: 'Project Alpha',
+    description:
+      'Placeholder description for a flagship project. Replace this with a clear one–sentence summary of what the project is and why it matters.',
+  },
+  {
+    title: 'Project Beta',
+    description:
+      'Placeholder description for a second project or experiment. Use this slot to highlight something you are building, testing, or shipping.',
+  },
+  {
+    title: 'Project Gamma',
+    description:
+      'Placeholder description for another notable project. Keep the real copy short, concrete, and oriented around outcomes.',
+  },
+  {
+    title: 'Project Delta',
+    description:
+      'Placeholder description for any additional work you want to surface here&mdash;client work, internal tools, or long-term explorations.',
+  },
+];
+---
+
+<BaseLayout
+  title="Projects | Nathaniel Senyo Gemegah"
+  description="Placeholder projects page for Nathaniel Senyo Gemegah – a simple overview of current and past work."
+>
+  <section class="space-y-10">
+    <header class="space-y-4">
+      <h1 class="page-heading">
+        Selected Projects
+      </h1>
+      <p class="text-sm sm:text-base md:text-lg text-black/80 max-w-2xl leading-relaxed">
+        This page is a placeholder overview of projects and experiments Pete wants to highlight. Replace these cards with real work, short descriptions, and relevant links.
+      </p>
+    </header>
+
+    <div class="grid gap-5 sm:gap-6 md:grid-cols-2">
+      {projects.map((project) => (
+        <ProjectCard title={project.title} description={project.description} />
+      ))}
+    </div>
+
+    <section class="pt-6 border-t border-black/10">
+      <NewsletterForm compact={true} />
+    </section>
+  </section>
+</BaseLayout>
+
