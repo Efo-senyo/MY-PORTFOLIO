@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://example.com', // TODO: Replace with real production URL
+  site: process.env.SITE_URL ?? 'https://example.com',
   output: 'static',
   integrations: [
     tailwind(),
